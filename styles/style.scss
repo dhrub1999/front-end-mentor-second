@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+//? Variables
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+
+$Red: hsl(0, 100%, 74%);
+$Green: hsl(154, 59%, 51%);
+$Blue: hsl(248, 32%, 49%);
+$Darkblue: hsl(249, 10%, 26%);
+$Grayblue: hsl(246, 25%, 77%);
+
+body {
+  width: 100%;
+  // background: url('../images/bg-intro-mobile.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hero-section {
+  .flexbox {
+    display: flex;
+    flex-direction: column;
+    background: url("../images/bg-intro-mobile.png"),
+      linear-gradient(to bottom, $Red, $Red);
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+
+    .left {
+      margin: 20px;
+      text-align: center;
+
+      .title {
+        font-size: 30px;
+        font-weight: 700;
+        color: white;
+        margin-bottom: 1rem;
+        line-height: 35px;
+      }
+
+      .info {
+        font-size: 15px;
+        color: white;
+        margin-bottom: 2rem;
+        width: 90%;
+        margin: auto;
+      }
+    }
+
+    .right {
+      .try {
+        height: 5rem;
+        width: 90%;
+        background: $Blue;
+        text-align: center;
+        color: white;
+        margin: 0 auto;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1rem;
+        box-shadow: 5px 8px 19px hsla(0, 100%, 74%, 0.9);
+
+        .trytext {
+          font-weight: 400;
+          width: 60%;
+
+          .bold {
+            font-weight: 700;
+          }
+        }
+      }
+    }
+
+    .form {
+      width: 90%;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      background: white;
+      border-radius: 10px;
+
+      input {
+        width: 90%;
+        margin: 5px auto;
+        padding: 10px 10px;
+        border: 1px solid $Grayblue;
+        border-radius: 5px;
+
+        &::placeholder {
+          font-family: "Poppins";
+          color: $Darkblue;
+          font-weight: 500;
+          padding-left: 5px;
+        }
+      }
+
+      .first {
+        margin-top: 20px;
+      }
+
+      .claim {
+        border: none;
+        outline: none;
+        background: $Green;
+        height: 3.5rem;
+        width: 90%;
+        margin: 0 auto;
+        border-radius: 5px;
+        margin-top: 10px;
+        color: white;
+        font-family: "Poppins";
+        font-weight: 600;
+        letter-spacing: 1px;
+        cursor: pointer;
+        box-shadow: 5px 9px 15px;
+      }
+
+      .tc {
+        width: 70%;
+        margin: 10px auto;
+        text-align: center;
+        font-size: 10px;
+        color: $Grayblue;
+
+        .red {
+          color: $Red;
+          font-weight: 600;
+          cursor: pointer;
+          transition: all 0.3s ease;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 700px) {
+  .hero-section {
+    background: url("../images/bg-intro-desktop.png"),
+      linear-gradient(to bottom, $Red, $Red);
+    background-repeat: repeat;
+    background-size: cover;
+
+    .flexbox {
+      flex-direction: row;
+      width: 80%;
+      margin: 0 auto;
+      justify-content: space-around;
+
+      .left {
+        width: 50%;
+        text-align: left;
+        margin-left: 0;
+        padding-left: 0;
+
+        .title {
+          width: 80%;
+          font-size: 40px;
+          line-height: 50px;
+          margin-bottom: 2rem;
+        }
+
+        .info {
+          width: 85%;
+          text-align: left;
+          padding: 0;
+          margin: 0;
+        }
+      }
+
+      .right {
+        width: 50%;
+
+        .try {
+          width: 100%;
+          box-shadow: 10px 15px 30px hsla(0, 100%, 74%, 1);
+        }
+
+        .form {
+          width: 100%;
+
+          input {
+            margin: 15px auto;
+            padding: 15px;
+          }
+
+          .first {
+            margin-top: 30px;
+          }
+
+          .tc {
+            margin-bottom: 40px;
+            margin-top: 20px;
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+}

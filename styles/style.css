@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Poppins";
+}
+
+body {
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hero-section .flexbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: url("../images/bg-intro-mobile.png"), -webkit-gradient(linear, left top, left bottom, from(#ff7a7a), to(#ff7a7a));
+  background: url("../images/bg-intro-mobile.png"), linear-gradient(to bottom, #ff7a7a, #ff7a7a);
+  height: 100vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hero-section .flexbox .left {
+  margin: 20px;
+  text-align: center;
+}
+
+.hero-section .flexbox .left .title {
+  font-size: 30px;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 1rem;
+  line-height: 35px;
+}
+
+.hero-section .flexbox .left .info {
+  font-size: 15px;
+  color: white;
+  margin-bottom: 2rem;
+  width: 90%;
+  margin: auto;
+}
+
+.hero-section .flexbox .right .try {
+  height: 5rem;
+  width: 90%;
+  background: #6055a5;
+  text-align: center;
+  color: white;
+  margin: 0 auto;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 1rem;
+  -webkit-box-shadow: 5px 8px 19px rgba(255, 122, 122, 0.9);
+          box-shadow: 5px 8px 19px rgba(255, 122, 122, 0.9);
+}
+
+.hero-section .flexbox .right .try .trytext {
+  font-weight: 400;
+  width: 60%;
+}
+
+.hero-section .flexbox .right .try .trytext .bold {
+  font-weight: 700;
+}
+
+.hero-section .flexbox .form {
+  width: 90%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: white;
+  border-radius: 10px;
+}
+
+.hero-section .flexbox .form input {
+  width: 90%;
+  margin: 5px auto;
+  padding: 10px 10px;
+  border: 1px solid #b9b6d3;
+  border-radius: 5px;
+}
+
+.hero-section .flexbox .form input::-webkit-input-placeholder {
+  font-family: "Poppins";
+  color: #3e3c49;
+  font-weight: 500;
+  padding-left: 5px;
+}
+
+.hero-section .flexbox .form input:-ms-input-placeholder {
+  font-family: "Poppins";
+  color: #3e3c49;
+  font-weight: 500;
+  padding-left: 5px;
+}
+
+.hero-section .flexbox .form input::-ms-input-placeholder {
+  font-family: "Poppins";
+  color: #3e3c49;
+  font-weight: 500;
+  padding-left: 5px;
+}
+
+.hero-section .flexbox .form input::placeholder {
+  font-family: "Poppins";
+  color: #3e3c49;
+  font-weight: 500;
+  padding-left: 5px;
+}
+
+.hero-section .flexbox .form .first {
+  margin-top: 20px;
+}
+
+.hero-section .flexbox .form .claim {
+  border: none;
+  outline: none;
+  background: #38cc8c;
+  height: 3.5rem;
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 5px;
+  margin-top: 10px;
+  color: white;
+  font-family: "Poppins";
+  font-weight: 600;
+  letter-spacing: 1px;
+  cursor: pointer;
+  -webkit-box-shadow: 5px 9px 15px;
+          box-shadow: 5px 9px 15px;
+}
+
+.hero-section .flexbox .form .tc {
+  width: 70%;
+  margin: 10px auto;
+  text-align: center;
+  font-size: 10px;
+  color: #b9b6d3;
+}
+
+.hero-section .flexbox .form .tc .red {
+  color: #ff7a7a;
+  font-weight: 600;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.hero-section .flexbox .form .tc .red:hover {
+  text-decoration: underline;
+}
+
+@media (min-width: 700px) {
+  .hero-section {
+    background: url("../images/bg-intro-desktop.png"), -webkit-gradient(linear, left top, left bottom, from(#ff7a7a), to(#ff7a7a));
+    background: url("../images/bg-intro-desktop.png"), linear-gradient(to bottom, #ff7a7a, #ff7a7a);
+    background-repeat: repeat;
+    background-size: cover;
+  }
+  .hero-section .flexbox {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 80%;
+    margin: 0 auto;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .hero-section .flexbox .left {
+    width: 50%;
+    text-align: left;
+    margin-left: 0;
+    padding-left: 0;
+  }
+  .hero-section .flexbox .left .title {
+    width: 80%;
+    font-size: 40px;
+    line-height: 50px;
+    margin-bottom: 2rem;
+  }
+  .hero-section .flexbox .left .info {
+    width: 85%;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+  }
+  .hero-section .flexbox .right {
+    width: 50%;
+  }
+  .hero-section .flexbox .right .try {
+    width: 100%;
+    -webkit-box-shadow: 10px 15px 30px #ff7a7a;
+            box-shadow: 10px 15px 30px #ff7a7a;
+  }
+  .hero-section .flexbox .right .form {
+    width: 100%;
+  }
+  .hero-section .flexbox .right .form input {
+    margin: 15px auto;
+    padding: 15px;
+  }
+  .hero-section .flexbox .right .form .first {
+    margin-top: 30px;
+  }
+  .hero-section .flexbox .right .form .tc {
+    margin-bottom: 40px;
+    margin-top: 20px;
+    font-size: 12px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
